@@ -1,0 +1,47 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.mainDiv {
+    margin-top: 50px;
+}
+
+.topRow {
+    background-color: blue;
+    width: 50%;
+    height: 100px;
+    text-align: left;
+}
+
+.middleRow {
+    background-color: yellow;
+    width: 50%;
+    height: 100px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.bottomRow {
+    background-color: green;
+    width: 50%;
+    height: 100px;
+    margin-top: 100px;
+    text-align: right;
+    position: relative;
+}
+
+.secondIMG {
+    display: block;
+}
+
+.middleIMG {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin-left: -40px;
+}
+
+.bottomImages {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
