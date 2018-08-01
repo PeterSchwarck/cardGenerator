@@ -1,42 +1,67 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
+#daButton {
+    background-color: green;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .mainDiv {
     margin-top: 50px;
 }
 
 .topRow {
-    background-color: blue;
     width: 50%;
     height: 100px;
     text-align: left;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    height: 150px;
+    position: relative;
 }
 
 .middleRow {
-    background-color: yellow;
     width: 50%;
     height: 100px;
-    margin-top: 100px;
     position: relative;
+    border-left: solid;
+    border-right: solid;
 }
 
 .bottomRow {
-    background-color: green;
     width: 50%;
     height: 100px;
-    margin-top: 100px;
     text-align: right;
     position: relative;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    height: 150px;
 }
 
-.secondIMG {
+.topImages {
+    position: absolute;
+    left: 0;
+    top: 0;
     display: block;
 }
 
-.middleIMG {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    margin-left: -40px;
+.topNum {
+    margin-left: 9px;
+    margin-top: 0;
+    display: block;
+    width: 20px;
+    text-align: center;
+}
+
+.bottomNum {
+    margin-right: 9px;
+    transform: rotate(180deg);
+    margin-bottom: 0px;
 }
 
 .bottomImages {
@@ -44,4 +69,57 @@
     right: 0;
     bottom: 0;
     display: block;
+}
+
+
+.diamond{
+    .symbol:before{
+        content: '\25CA';
+        color: #ff0000;
+    }
+}
+
+.heart{
+    .symbol:before{
+        content: '\2665';
+        color: #ff0000;
+    }
+}
+
+.spade{
+    .symbol:before{
+        content: '\2660';
+        color: #000000;
+    }
+}
+
+.club{
+    .symbol:before{
+        content: '\2663';
+        color: #000000;
+    }
+}
+
+.middleSymbol:before{
+    font-size: 200px;
+    position: relative;
+    top: -115px;;
+    left: 0;
+}
+
+.bottomSymbol:before{
+    font-size: 50px;
+    position: absolute;
+    top: -50px;
+    right: 6px;
+    transform: rotate(180deg);
+    padding-top: 18px;
+    padding-right: 275px;
+}
+
+.topSymbol:before{
+    font-size: 50px;
+    position: absolute;
+    top: 14px;
+    right: -11px;
 }

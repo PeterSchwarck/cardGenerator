@@ -2,25 +2,32 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Hello Rigo with Vanilla.js</title>
+        <title>Random Card Generator</title>
         <link rel="shortcut icon" href="asset/img/4geeks.ico"></head>
     <body>
-        <div class="mainDiv" align="center">
-            <div class="topRow">
-                <h2 class="secondIMG" >8</h2>
-                <img alt="Smiley face" height="42" width="42"> 
-            </div>
-            <div class = "middleRow">
-                <img class="middleIMG" alt="Smiley face"  width="42">
-                
-            </div>
-            <div class = "bottomRow">
-                <div class="bottomImages">
-                    <img class="imgBottom" alt="Smiley face" height="42" width="42">
-                    <h2 style="display:block">8</h2>
+        <div class="row mt-4"> 
+            <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xl-5 p-0 mx-auto text-center">
+                <div class="mainDiv" align="center"><h1>Random Card Generator</h1>
+                    <div class="topRow">
+                        <div class="topImages">
+                            <h2 class="topNum" style="display:block"></h2>
+                            <span class="symbol topSymbol"></span>
+                        </div>
+                    </div>
+                    <div class = "middleRow">
+                        <div class="middleImage">
+                            <span class="symbol middleSymbol" style="display:block"></span>
+                        </div>
+                    </div>
+                    <div class = "bottomRow">
+                        <div class="bottomImages">
+                            <span class="symbol bottomSymbol"></span>
+                            <h2 class="bottomNum" style="display:block"></h2>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            
         </div>
         
         
@@ -28,5 +35,9 @@
         
         
         
-        <script type="text/javascript" src="bundle/bundle.js"></script></body>
+        <script type="text/javascript" src="bundle/bundle.js"></script>
+    </body>
+    <footer align="center">
+        <button id="daButton" >Click Here</button>
+    </footer>
 </html>
